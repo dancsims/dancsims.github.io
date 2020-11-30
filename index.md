@@ -1,3 +1,3 @@
 ---
-layout: myIndex
+layout: page
 ---
