@@ -18,7 +18,7 @@ export default function ContactDrawer({
       />
       {/* Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-80 bg-gray-800 shadow-lg z-50 transform transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"}`}
+        className={`fixed top-0 right-0 h-full bg-gray-800 shadow-lg z-50 transform transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"} w-full max-w-full sm:w-96 md:w-80 md:max-w-xs`}
         role="dialog"
         aria-modal="true"
         onClick={(e) => e.stopPropagation()}

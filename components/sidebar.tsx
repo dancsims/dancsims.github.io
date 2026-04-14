@@ -32,15 +32,31 @@ const Sidebar: React.FC<SidebarProps> = ({
   links = defaultLinks,
   isOpen = true,
 }) => {
+  // Use a media query to determine if mobile
+  const [isMobile, setIsMobile] = React.useState(false);
+  React.useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  // Always render sidebar, but slide in/out using translate-x
   return (
     <aside
-      className={`fixed left-1 top-1 h-[calc(100vh-0.5rem)] z-20 transition-all duration-300 ${isOpen ? "w-64" : "w-0 overflow-hidden"}`}
+      className={
+        `transition-transform duration-300 ` +
+        (isMobile
+          ? `fixed top-1 left-1 z-50 h-[calc(100vh-0.5rem)] w-64 bg-transparent md:hidden ${isOpen ? "translate-x-0" : "-translate-x-[calc(100%+0.25rem)]"}`
+          : `hidden md:block md:fixed md:left-1 md:top-1 md:h-[calc(100vh-0.5rem)] md:w-64 md:z-30 md:rounded-2xl ` +
+            `${isOpen ? "md:translate-x-0" : "md:-translate-x-[calc(100%+0.25rem)]"}`)
+      }
       aria-label="Sidebar"
-      style={{ marginBottom: "1rem" }}
+      style={isMobile ? {} : { marginBottom: "1rem" }}
     >
       <div
         className="relative flex flex-col h-full bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 shadow-xl rounded-2xl border-r border-l border-gray-700 transition-all duration-300"
-        style={{ minWidth: isOpen ? 256 : 0, marginLeft: 0 }}
+        style={{ minWidth: 256, marginLeft: 0 }}
       >
         {/* Profile Section */}
         <div className="flex flex-col items-center py-8 border-b border-gray-700">

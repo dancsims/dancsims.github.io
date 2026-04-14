@@ -1,3 +1,12 @@
+/* Responsive tweaks for sidebar and contact drawer */
+@media (max-width: 768px) {
+  .sidebar-mobile-hide {
+    display: none !important;
+  }
+  .sidebar-mobile-bottom {
+    display: flex !important;
+  }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,5 +38,9 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
   }
 }
