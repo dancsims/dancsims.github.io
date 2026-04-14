@@ -14,7 +14,13 @@ export default function MainShell({ navLinks, children }: MainShellProps) {
   return (
     <div className="flex min-h-screen">
       <Sidebar links={navLinks} isOpen={sidebarOpen} />
-      <div className={sidebarOpen ? "flex-1 ml-64" : "flex-1 ml-0"}>
+      <div
+        className={
+          sidebarOpen
+            ? "flex-1 ml-[272px] mt-2 transition-all duration-300"
+            : "flex-1 ml-0 mt-2 transition-all duration-300"
+        }
+      >
         <Header onSidebarToggle={() => setSidebarOpen((v) => !v)} />
         <div className="p-4">{children}</div>
       </div>

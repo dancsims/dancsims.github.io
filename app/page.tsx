@@ -11,6 +11,11 @@ export default function Home() {
       <h2 className="text-xl text-gray-600 dark:text-gray-300 mb-4">
         Software Engineer
       </h2>
+      <Tag label="15+ years" />
+      <Tag label="Database Administrator" />
+      <Tag label="Data Engineer" />
+      <Tag label="Full Stack Engineer" />
+      <Tag label="IoT & Enterprise" />
       <Card title="Background" icon={<FaUser />} className="mb-8">
         {/* Add your background summary here. */}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
