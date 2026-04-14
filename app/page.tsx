@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div id="summary" className="max-w-2xl mx-auto mt-8">
       <h1 className="text-3xl font-bold mb-2">Daniel Sims</h1>
-      <h2 className="text-xl text-gray-600 dark:text-gray-300 mb-4">
+      <h2 className="text-xl text-gray-600 dark:text-gray-300">
         Software Engineer
       </h2>
       <Tag label="15+ years" />
@@ -16,11 +16,14 @@ export default function Home() {
       <Tag label="Data Engineer" />
       <Tag label="Full Stack Engineer" />
       <Tag label="IoT & Enterprise" />
-      <Card title="Background" icon={<FaUser />} className="mb-8">
-        {/* Add your background summary here. */}
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget
-        aliquam massa nisl quis neque.
+      <Card title="Background" icon={<FaUser />} className="mb-8 mt-4">
+        With over 15 years of experience in IT, I have a strong background in
+        database development, architecture, and administration. I have worked
+        extensively with Microsoft SQL Server, Oracle, and PostgreSQL, designing
+        and optimizing databases for performance and scalability. In recent
+        years, I have transitioned into full stack development, leveraging my
+        database expertise to build robust applications. I am passionate about
+        learning new technologies and applying them to solve complex problems.
       </Card>
 
       {/* Education Section */}

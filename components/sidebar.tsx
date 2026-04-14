@@ -62,7 +62,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         <div className="flex flex-col items-center py-8 border-b border-gray-700">
           <FaUserCircle className="text-5xl text-blue-400 mb-2 drop-shadow-lg" />
           <span className="text-lg font-semibold text-white tracking-wide">
-            Dan Sims
+            Daniel Sims
           </span>
           <span className="text-xs text-gray-400">
             Senior Software Engineer
