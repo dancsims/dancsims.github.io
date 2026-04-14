@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import MainShell from "@/components/main-shell";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,12 +12,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
+  const navLinks = [
+    { text: "Home", url: "/" },
+    { text: "Experience", url: "/experience" },
+    { text: "Portfolio", url: "/portfolio" },
+    { text: "Skills", url: "/skills" },
+  ];
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <MainShell navLinks={navLinks}>{children}</MainShell>
+      </body>
     </html>
   );
 }
