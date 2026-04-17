@@ -5,7 +5,7 @@ import * as FaIcons from "react-icons/fa";
 
 export default function SkillsPage() {
   return (
-    <div className="max-w-3xl mx-auto mt-8">
+    <div className="max-w-4xl mx-auto mt-8">
       <h1 className="text-3xl font-bold mb-2">Skills</h1>
       <p className="mb-6">
         Here you can find a list of my professional skills and proficiencies.

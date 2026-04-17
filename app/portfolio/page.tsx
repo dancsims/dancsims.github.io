@@ -6,7 +6,7 @@ const sortedProjects = [...projects].sort((a, b) => a.sortOrder - b.sortOrder);
 
 export default function PortfolioPage() {
   return (
-    <div className="max-w-3xl mx-auto mt-8">
+    <div className="max-w-4xl mx-auto mt-8">
       <h1 className="text-3xl font-bold mb-2">Portfolio</h1>
       <p className="mb-6">
         Here you can find a showcase of my projects and work experience.

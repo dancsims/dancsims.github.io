@@ -6,7 +6,7 @@ import { FaGraduationCap, FaCertificate } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div id="summary" className="max-w-2xl mx-auto mt-8">
+    <div id="summary" className="max-w-4xl mx-auto mt-8">
       <h1 className="text-3xl font-bold mb-2">Daniel Sims</h1>
       <h2 className="text-xl text-gray-600 dark:text-gray-300">
         Software Engineer
