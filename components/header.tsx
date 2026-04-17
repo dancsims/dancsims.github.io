@@ -22,7 +22,7 @@ export const Header: React.FC<HeaderProps> = ({ onSidebarToggle }) => {
 
   return (
     <>
-      <header className="flex items-center gap-4 px-6 py-4 bg-black border-b relative z-40">
+      <header className="flex items-center gap-4 px-6 py-4 bg-black border-b sticky top-0 left-0 w-full z-50">
         <button
           aria-label="Toggle sidebar"
           className="p-2 rounded hover:bg-gray-100 inline-flex"

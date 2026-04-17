@@ -20,7 +20,13 @@ export default function MainShell({ navLinks, children }: MainShellProps) {
     };
     checkMobile();
     window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
+    // Listen for sidebar-close event from Sidebar
+    const closeSidebar = () => setSidebarOpen(false);
+    window.addEventListener("sidebar-close", closeSidebar);
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+      window.removeEventListener("sidebar-close", closeSidebar);
+    };
   }, []);
 
   return (
@@ -28,8 +34,8 @@ export default function MainShell({ navLinks, children }: MainShellProps) {
       <div
         className={
           !isMobile && sidebarOpen
-            ? "flex-1 md:ml-[272px] ml-0 mt-2 transition-all duration-300"
-            : "flex-1 ml-0 mt-2 transition-all duration-300"
+            ? "flex-1 md:ml-[272px] ml-0 transition-all duration-300"
+            : "flex-1 ml-0 transition-all duration-300"
         }
       >
         <Header onSidebarToggle={() => setSidebarOpen((v) => !v)} />
