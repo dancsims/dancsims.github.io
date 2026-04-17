@@ -11,13 +11,15 @@ export const projects: Project[] = [
   {
     sortOrder: 1,
     title: "Weather-Angular",
-    description: "Project 1 description",
-    link: "https://weather-angular-gamma.vercel.app/",
+    description:
+      "A full-stack weather application built with Angular and Node.js that provides real-time weather conditions and forecasts. Users can search by city, zip code, or use their current location via geolocation to get current conditions and multi-day forecasts powered by the OpenWeatherMap API.",
+    link: "https://weather-angular-phi.vercel.app/",
   },
   {
     sortOrder: 2,
     title: "Developer Card",
-    description: "Project 4 description",
+    description:
+      "A simple web app that displays my developers profile card, built with React. It showcases basic information, profile image, and contact details in a clean, responsive layout.",
     link: "https://dancsims.github.io/developer-card/",
   },
   {
