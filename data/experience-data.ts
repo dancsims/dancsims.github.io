@@ -81,7 +81,6 @@ export const workExperience: WorkExperience[] = [
       "Performance Tuning",
       "Mentoring",
       "Business Continuity",
-      "Agile",
     ],
     responsibilities: [
       "Contributed to multiple award-winning Agile teams (Technology First Outstanding Technology Team 2016 and 2018), including developing an internal iOS application with a C# API utilizing SQL stored procedures, and maintaining the Speedy Rewards system.",
