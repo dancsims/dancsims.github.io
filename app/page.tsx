@@ -33,16 +33,30 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card
-            title="Master of Science, Data Analytics"
+            title={
+              <>
+                Master of Science,
+                <br />
+                Data Analytics
+              </>
+            }
             // icon={<FaGraduationCap />}
           >
-            <div className="font-semibold">Western Governors University</div>
+            <div className="font-semibold" style={{ verticalAlign: "bottom" }}>
+              Western Governors University
+            </div>
             <div className="text-sm text-gray-500 dark:text-gray-400">
               <Tag label="2020 – 2021" />
             </div>
           </Card>
           <Card
-            title="Bachelor of Science, Computer Science"
+            title={
+              <>
+                Bachelor of Science,
+                <br />
+                Computer Science
+              </>
+            }
             // icon={<FaGraduationCap />}
           >
             <div className="font-semibold">Wright State University</div>

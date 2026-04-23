@@ -29,9 +29,9 @@ export const workExperience: WorkExperience[] = [
     responsibilities: [
       "Maintained and enhanced Copeland's enterprise management software, Connect+.",
       "Developed and maintained web applications using Typescript and Next.js.",
-      "Architected, designed, and implemented database solutions using Microsoft SQL Server.",
+      "Architected, designed, and implemented database solutions using Microsoft SQL Server and PostgreSQL.",
       "Migrated on-premises applications to Azure cloud services, ensuring scalability and reliability.",
-      "Implemented Archicture as Code (AaC) practices using Bicep to manage and provision cloud infrastructure.",
+      "Implemented Infrastructure as Code (IaC) practices using Bicep to manage and provision cloud infrastructure.",
       "Created CI/CD pipelines using GitHub Actions to automate application deployment and infrastructure provisioning.",
     ],
   },
